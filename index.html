@@ -385,6 +385,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
+            margin-top: 1rem;
         }
         
         .submit-btn:hover {
@@ -431,13 +432,24 @@
         [data-netlify-recaptcha] > div,
         [data-netlify-recaptcha] iframe,
         .g-recaptcha {
-            margin: 0 auto;
+            margin: 0 auto !important;
+            display: block !important;
+            text-align: center !important;
+        }
+        
+        /* Target any div containing iframe for reCAPTCHA */
+        div:has(iframe[src*="recaptcha"]),
+        div:has(iframe[title*="recaptcha"]) {
+            text-align: center !important;
+            display: flex !important;
+            justify-content: center !important;
+            margin: 2rem auto !important;
         }
         
         /* Ensure form inputs keep left alignment */
         .form-group input,
         .form-group textarea {
-            text-align: left;
+            text-align: left !important;
         }
         
         /* Local development placeholder */
