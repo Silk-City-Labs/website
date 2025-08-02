@@ -1,3 +1,3 @@
 # Silk City Labs Website
 
-[logo][./assets/images/dark-logo.png]
+![alt text][https://github.com/Silk-City-Labs/website/blob/main/assets/images/dark-logo.png]
