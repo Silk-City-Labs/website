@@ -1,0 +1,26 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Dependency directories
+node_modules/
+
+# Optional: Uncomment if you want to keep certain assets private
+# logo-source.psd
+# logo-source.ai
+# assets/raw/
+
+# Optional: Local development files
+# local-config.js
+# test.html
