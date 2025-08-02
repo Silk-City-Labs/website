@@ -345,6 +345,10 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
+        .contact-form form {
+            display: block !important;
+        }
+        
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -420,6 +424,18 @@
             margin: 2rem 0;
             display: flex;
             justify-content: center;
+            min-height: 78px; /* Standard reCAPTCHA height */
+        }
+        
+        /* Local development placeholder */
+        [data-netlify-recaptcha]:empty::after {
+            content: "reCAPTCHA will appear here on production";
+            color: #999;
+            font-style: italic;
+            padding: 1rem;
+            border: 2px dashed #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
         }
         
         /* Footer */
@@ -640,7 +656,9 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <div data-netlify-recaptcha="true"></div>
+                <div data-netlify-recaptcha="true">
+                    <!-- reCAPTCHA will appear here on Netlify -->
+                </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
