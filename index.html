@@ -425,13 +425,19 @@
             justify-content: center;
             align-items: center;
             min-height: 78px; /* Standard reCAPTCHA height */
-            text-align: center;
         }
         
         /* Center the reCAPTCHA iframe when Netlify injects it */
         [data-netlify-recaptcha] > div,
-        [data-netlify-recaptcha] iframe {
+        [data-netlify-recaptcha] iframe,
+        .g-recaptcha {
             margin: 0 auto;
+        }
+        
+        /* Ensure form inputs keep left alignment */
+        .form-group input,
+        .form-group textarea {
+            text-align: left;
         }
         
         /* Local development placeholder */
