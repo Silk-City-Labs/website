@@ -420,36 +420,17 @@
         
         /* reCAPTCHA styling */
         [data-netlify-recaptcha] {
-            margin: 2rem auto;
+            margin: 2rem 0;
             margin-bottom: 2.5rem;
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
+            display: block;
+            text-align: center;
             min-height: 78px; /* Standard reCAPTCHA height */
         }
         
-        /* Center the reCAPTCHA iframe when Netlify injects it */
-        [data-netlify-recaptcha] > div,
-        [data-netlify-recaptcha] iframe,
-        .g-recaptcha {
+        /* Center the actual reCAPTCHA widget */
+        iframe[src*="recaptcha"] {
             margin: 0 auto !important;
             display: block !important;
-            text-align: center !important;
-        }
-        
-        /* Target any div containing iframe for reCAPTCHA */
-        div:has(iframe[src*="recaptcha"]),
-        div:has(iframe[title*="recaptcha"]) {
-            text-align: center !important;
-            display: flex !important;
-            justify-content: center !important;
-            margin: 2rem auto !important;
-        }
-        
-        /* Ensure form inputs keep left alignment */
-        .form-group input,
-        .form-group textarea {
-            text-align: left !important;
         }
         
         /* Local development placeholder */
