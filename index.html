@@ -421,11 +421,17 @@
         [data-netlify-recaptcha] {
             margin: 2rem auto;
             margin-bottom: 2.5rem;
-            display: flex;
+            display: flex !important;
             justify-content: center;
             align-items: center;
             min-height: 78px; /* Standard reCAPTCHA height */
             text-align: center;
+        }
+        
+        /* Center the reCAPTCHA iframe when Netlify injects it */
+        [data-netlify-recaptcha] > div,
+        [data-netlify-recaptcha] iframe {
+            margin: 0 auto;
         }
         
         /* Local development placeholder */
