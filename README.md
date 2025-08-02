@@ -1,3 +1,3 @@
 # Silk City Labs Website
 
-![alt text](./assets/images/dark-logo.png)
+<img src="./assets/images/dark-logo.png" alt="Silk City Labs Logo" width="200"/>
